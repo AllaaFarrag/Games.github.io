@@ -1,0 +1,88 @@
+:root {
+    --main-color: #ffffff;
+    --seconde-color: #f0f0f0;
+    --color-text: #000;
+    --btn-main-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+    --main-color: #272b30;
+    --seconde-color: #32383e;
+    --color-text: #fff;
+    --btn-main-color: #272729;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--color-text);
+    font-family: "Comfortaa", cursive;
+}
+
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+    font-family: "Nerko One", cursive;
+    color: var(--color-text) !important;
+ }
+ 
+ a{
+    color:  inherit !important;
+ }
+ p,
+ span {
+    color: gray
+ }
+ 
+ ul {
+    list-style-position: inside;
+ }
+ 
+ nav {
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+ }
+
+ .nav-item .nav-link.active,
+ .nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+ }
+
+ 
+ .loader {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1000;
+   width: 48px;
+   height: 48px;
+   background: #fff;
+   animation: rotate 1s linear infinite;
+ }
+ 
+ @keyframes rotate {
+   0% {
+     transform: rotate(0deg) scale(0.2);
+     border-radius: 10%;
+   }
+   50% {
+     transform: rotate(180deg) scale(1.5);
+     border-radius: 50%;
+   }
+   100% {
+     transform: rotate(360deg) scale(0.2);
+     border-radius: 10%;
+   }
+ }
+    
+        
+
+  
